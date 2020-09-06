@@ -1,0 +1,11 @@
+---
+kind: ConfigMap 
+apiVersion: v1 
+metadata:
+  name: mediawiki-configmap
+data:
+  MYSQL_DATABASE: wikidatabase
+  MYSQL_HOSTNAME: mysql
+  MYSQL_PASSWORD: mysqladmin
+  MYSQL_USER: wiki
+  MYSQL_PORT: '5432'
