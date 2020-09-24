@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: mysqlsec
+data:
+  MYSQL_DATABASE: d2lraWRhdGFiYXNl
+  MYSQL_HOSTNAME: bXlzcWw=
+  MYSQL_PASSWORD: bXlzcWxhZG1pbg==
+  MYSQL_USER: d2lraQ==
+  MYSQL_PORT: NTQzMg==

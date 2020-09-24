@@ -15,12 +15,15 @@ spec:
       labels:
         app: mediawiki-app
     spec:
+      # volumes:
+      #   - name: secret-vol
+      #     secretName: mysqlsec
       containers:
       - name: mediawiki
         image: mediawiki
         envFrom:
-          - configMapRef:
-              name: mediawiki-configmap
+          - secretRef:
+              name: mysqlsec
 
         ports:
           - name: mediawiki-port
